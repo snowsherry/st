@@ -158,13 +158,14 @@
         if(!value){
           value=new Date().getTime()+Math.ceil(Math.random()*100);
             localStorage.setItem(key,value)
+          fbq('trackCustom','install_FB_Lucky_Rummy');
+          gtag('event', 'click', {
+            'event_category': 'Install',
+            'event_label': 'install_FB_Lucky_Rummy',
+            'value':value
+          });
         }
-        fbq('trackCustom','install_FB_Lucky_Rummy');
-        gtag('event', 'click', {
-          'event_category': 'Install',
-          'event_label': 'install_FB_Lucky_Rummy',
-          'value':value
-        });
+
       }
     },
         mounted() {
