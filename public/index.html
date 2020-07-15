@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="description" content="Play FREE RUMMY at Lucky Rummy – the best poker app in India">
+    <meta name="keywords" content="teen patti, teen patti chips, 3 patti, teen patti online, free teen patti, teen patti game, teen patti cash, rummy, rummy 13, rummy cash, real cash game, card game, free card game, free rummy, rummy app, rummy online">
+    <title>Lucky Rummy</title>
+    <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    <script type="text/javascript" async="" src="./js/analytics.js"></script>
+    <script async="" src="./js/js"></script>
+
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <img height = "1" width = "1" style = "display:none" src = "https://www.facebook.com/tr?id=187797569213226&ev=PageView&noscript=1" alt = ""/>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-171101755-1');
+    !function (f, b, e, v, n, t, s){
+      if (f.fbq) return;
+      n = f.fbq = function (){
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window,
+      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '187797569213226');
+    fbq('track', 'PageView');
+
+
+    //定义一个变量，记录点击事件
+  </script>
   </body>
 </html>
