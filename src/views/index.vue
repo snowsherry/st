@@ -148,7 +148,7 @@
     methods:{
       handleInstall(){
         if(isIOS()){
-          alert('请使用安卓手机安装下载')
+          alert('Please use Android device to install app')
           return;
         }
         this.isInstall=true;
