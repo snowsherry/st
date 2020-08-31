@@ -70,7 +70,10 @@
      "pre-commit":"lint-staged"
   },
   "lint-staged": {
-    "src/**/": ["eslint --fix", "git add"]
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"

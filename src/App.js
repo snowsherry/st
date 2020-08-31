@@ -5,6 +5,7 @@ import './App.css';
 function App() {
  let a =12222;
  let bdd=a;
+ let c=222;
   return (
     <div className="App">
       <header className="App-header">
