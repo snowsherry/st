@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
  let a =122;
+ let b=a;
   return (
     <div className="App">
       <header className="App-header">
