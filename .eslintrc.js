@@ -5,7 +5,7 @@ module.exports={
         ecmaVersion: 6,
         ecmaFeatures: {
             jsx: true
-        }
+        },
     },
     env: {
         es6: true,
@@ -15,6 +15,7 @@ module.exports={
     rules: {
         "eol-last": 2,
         //"no-undef":2,
+        "semi": [2,'always'],
         "no-console": 0,
         "space-infix-ops":2,
         "no-multiple-empty-lines": 2

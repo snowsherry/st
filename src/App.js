@@ -6,6 +6,7 @@ function App() {
  let a = 12222;
  let bdd = a;
  let c = 22222;
+ let d = 222;
   return (
     <div className="App">
       <header className="App-header">
