@@ -64,9 +64,13 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
-    "lint": "eslint --ext .js --ext .jsx /src ",
-    "precommit": "npm run lint"
+    "test": "node scripts/test.js"
+  },
+  "husky": {
+     "pre-commit":"lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*": ["eslint --ext .js --ext .jsx --fix", "git add"]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -141,6 +145,7 @@
     ]
   },
   "devDependencies": {
-    "husky": "^4.2.5"
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.13"
   }
 }
